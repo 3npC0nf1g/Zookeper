@@ -1,4 +1,6 @@
-let input = require('sync-input');
+//let input = require('sync-input');
+
+const prompt = require("prompt-sync")({ sigint: true });
 
 let camel =`
 Switching on the camera in the camel habitat...
@@ -127,7 +129,7 @@ let answer ;
 
 do{
     console.log("Which habitat # do you need?");
-    answer = input();
+    answer = prompt();
 
     if(answer !== "exit" ){
 
